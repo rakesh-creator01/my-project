@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const initData = require("./data.js");
 const Listing = require("../models/listing.js");
 
-const MONGO_URL = "mongodb://127.0.0.1:27017/LANDSELL";
+// const MONGO_URL = "mongodb://127.0.0.1:27017/LANDSELL";
 // const dbUrl = process.env.ATLASDB_URL;
 
 main()
@@ -14,7 +14,7 @@ main()
   });
 
 async function main() {
-  await mongoose.connect(MONGO_URL);
+  await mongoose.connect("mongodb://127.0.0.1:27017/LANDSELL");
 }
 
 const initDB = async () => {
